@@ -14,7 +14,7 @@ public class PizzaStore {
     public Pizza orderPizza() {
         PizzaFactory pizzaFactory = new PizzaFactory();
 
-        return pizzaFactory.createPizza("chesse");
+        return pizzaFactory.createPizza("pizza.ClamPizza");
     }
 
 }
