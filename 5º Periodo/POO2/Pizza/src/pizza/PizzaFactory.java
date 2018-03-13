@@ -9,17 +9,23 @@ package pizza;
  *
  * @author 20142bsi0070
  */
-public class PizzaFactory extends Pizza{
+public class PizzaFactory extends Pizza {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-
-    public Pizza createPizza(String tipo) {
-        return null;
+    // TODO code application logic here
+    public static Pizza createPizza(String tipo) {
+        Pizza pizza;
+        Object classeReflection = null;
+        try {
+            classeReflection = Class.forName(tipo).newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        pizza = (Pizza) classeReflection;
+        return pizza;
     }
 
 }

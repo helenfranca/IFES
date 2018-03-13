@@ -7,17 +7,11 @@ package pizza;
 
 /**
  *
- * @author 20142bsi0070
+ * @author ISM
  */
-public class PizzaStore extends PizzaFactory {
+public class Main {
 
-    public Pizza orderPizza() {
-
-        Pizza pizza;
-
-        pizza = PizzaFactory.createPizza("pizza.ChessePizza");
-
-        return pizza;
+    public static void main(String[] args) {
     }
 
 }
