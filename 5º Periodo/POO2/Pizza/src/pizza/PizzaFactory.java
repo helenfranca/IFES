@@ -9,10 +9,10 @@ package pizza;
  *
  * @author 20142bsi0070
  */
-public class PizzaFactory extends Pizza {
+public class PizzaFactory {
 
     // TODO code application logic here
-    public static Pizza createPizza(String tipo) {
+    public Pizza createPizza(String tipo) {
         Pizza pizza;
         Object classeReflection = null;
         try {

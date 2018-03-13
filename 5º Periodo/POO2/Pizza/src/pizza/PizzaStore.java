@@ -9,15 +9,12 @@ package pizza;
  *
  * @author 20142bsi0070
  */
-public class PizzaStore extends PizzaFactory {
+public class PizzaStore {
 
     public Pizza orderPizza() {
+        PizzaFactory pizzaFactory = new PizzaFactory();
 
-        Pizza pizza;
-
-        pizza = PizzaFactory.createPizza("pizza.ChessePizza");
-
-        return pizza;
+        return pizzaFactory.createPizza("chesse");
     }
 
 }

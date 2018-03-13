@@ -13,22 +13,22 @@ public class ClamPizza extends Pizza {
 
     @Override
     public void bake() {
-        System.out.println("A Assar uma pizza de 'clam'!");
+        System.out.println("A Assar uma pizza de frutos do mar!");
     }
 
     @Override
     public void prepare() {
-        System.out.println("A preparar uma pizza de 'clam'");
+        System.out.println("A preparar uma pizza de frutos do mar");
     }
 
     @Override
     public void cut() {
-        System.out.println("A cortar uma pizza de 'clam'");
+        System.out.println("A cortar uma pizza de frutos do mar");
     }
 
     @Override
     public void box() {
-        System.out.println("Embalando uma pizza de 'clam'");
+        System.out.println("Embalando uma pizza de frutos do mar");
     }
 
 }

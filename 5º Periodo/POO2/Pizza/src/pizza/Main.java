@@ -12,6 +12,15 @@ package pizza;
 public class Main {
 
     public static void main(String[] args) {
+
+        PizzaStore pizzaStore = new PizzaStore();
+        Pizza pizza = pizzaStore.orderPizza();
+
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+
     }
 
 }
