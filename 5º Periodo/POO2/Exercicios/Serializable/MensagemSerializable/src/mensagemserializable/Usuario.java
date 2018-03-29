@@ -21,6 +21,11 @@ public class Usuario implements Serializable {
     public Usuario(String pNome) {
         this.nome = pNome;
         this.mensagensEnviadas = new ArrayList<Mensagem>();
+        this.mensagensRecebidas = new ArrayList<Mensagem>();
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getNome() {
@@ -32,7 +37,7 @@ public class Usuario implements Serializable {
     }
 
     public void addMensagemRecebidas(Mensagem nMensagem) {
-        mensagensEnviadas.add(nMensagem);
+        mensagensRecebidas.add(nMensagem);
     }
 
     public String getMensagensEnviadas() {

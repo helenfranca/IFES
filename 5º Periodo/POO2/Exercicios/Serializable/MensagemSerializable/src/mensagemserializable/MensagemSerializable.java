@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -20,23 +22,22 @@ import java.io.Serializable;
 public class MensagemSerializable {
 
     public static void main(String[] args) throws Exception {
+        Escrever escrever = new Escrever();
+        Ler ler = new Ler();
 
         Usuario usuario1 = new Usuario("Lelinha");
         Usuario usuario2 = new Usuario("Helen");
 
         Mensagem sms1 = new Mensagem("Comida Japonesa", usuario1);
         usuario1.addMensagemEnviadas(sms1);
-       
+
         Mensagem sms3 = new Mensagem("Melancia!", usuario2);
         usuario2.addMensagemRecebidas(sms3);
-        
-        Mensagem sms2 = new Mensagem("Melancia!", usuario2);
+
+        Mensagem sms2 = new Mensagem("Sorvete!", usuario2);
         usuario2.addMensagemEnviadas(sms2);
 
-        Escrever escrever = new Escrever();
         escrever.escrever(usuario1, usuario2);
-
-        Ler ler = new Ler();
         ler.ler();
 
     }

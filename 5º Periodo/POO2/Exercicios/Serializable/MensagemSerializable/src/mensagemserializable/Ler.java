@@ -25,6 +25,6 @@ public class Ler {
         user2 = (Usuario) inputSerial.readObject();
 
         inputSerial.close();
-        
+        System.out.println(user1.nome + " e " + user2.nome);
     }
 }

@@ -15,7 +15,7 @@ public class Mensagem implements Serializable {
 
     String texto;
     Usuario usuario;
-    String resposta; /** Tem essa necessidade? */
+    
 
     public Mensagem(String pTexto, Usuario pUsuario) {
         this.texto = pTexto;
